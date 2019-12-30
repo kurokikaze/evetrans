@@ -1,0 +1,4 @@
+# Кратчайший путь из Dodixie в Jita по безопасным системам
+MATCH p=shortestPath((a {name: "Dodixie"})-[:HAS_JUMP*]-(b {name:"Jita"}))
+WHERE ALL(x IN nodes(p) WHERE (x:SYSTEM))
+RETURN p

@@ -1,0 +1,19 @@
+{
+  "name": "evetrans",
+  "version": "0.0.1",
+  "description": "EVE transport utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "make-map": "node eve-map-json/update-db.js",
+    "test": "jest"
+  },
+  "author": "kurokikaze@yandex.ru",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/node": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
+    "neo4j-js": "0.0.8"
+  }
+}
